@@ -1,0 +1,22 @@
+pluginManagement {
+    plugins {
+        id 'com.android.application'
+        id 'com.google.gms.google-services'
+        id 'org.jetbrains.kotlin.android' version '1.7.10'
+    }
+
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "ChatingApp"
+include ':app'
